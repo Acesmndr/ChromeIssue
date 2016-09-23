@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+  <div id="container">
+    <iframe src="frame.html"></iframe>
+  </div>
+  <script>
+  (function() {
+    let iFrame = document.createElement("iframe");
+    iFrame.src = "frame.html";
+    setTimeout(() => {
+      document.getElementById("container").appendChild(iFrame);
+    }, 3000);
+  })();
+  </script>
+</body>
+
+</html>
